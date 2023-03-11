@@ -55,7 +55,6 @@ export default async (req, res) => {
       duration: simulation.duration,
       score: simulation.score,
     };
-
     const simulationCollection = collection(db, "simulations");
     const simulationSnapshot = await addDoc(
       simulationCollection,
